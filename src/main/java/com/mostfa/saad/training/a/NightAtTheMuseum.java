@@ -1,4 +1,4 @@
-package com.a;
+package com.mostfa.saad.training.a;
 
 //import java.util.Scanner;
 //
