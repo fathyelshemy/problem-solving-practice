@@ -8,30 +8,31 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Solution {
-    static String dayOfProgrammer(int year) {
-        if(year==1918)
-            return "26.09.1918";
-        else if(isLeap(year))
-            return "12.09."+year;
-        else
-            return "13.09."+year;
-
-    }
-    static boolean isLeap(int year){
-        if(year>1918) {
-            if (((year % 4 == 0) && (year % 100 != 0)) || (year%400==0))
-                return true;
-        }else{
-            if(year%4==0)
-                return true;
+    // Complete the bonAppetit function below.
+    static void bonAppetit(List<Integer> bill, int k, int b) {
+        int sumTotal = (bill.stream().mapToInt(Integer::intValue).sum())/2;
+        bill.remove(k);
+        int sumDiscount = (bill.stream().mapToInt(Integer::intValue).sum())/2;
+        int difference = b - sumDiscount;
+        if (difference == 0){
+            System.out.println("Bon Appetit");
+         }else{
+            System.out.println(difference);
         }
 
-        return false;
     }
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int year = input.nextInt();
-        System.out.println(dayOfProgrammer(year));
+        int nSize = input.nextInt();
+        int k = input.nextInt();
+        List<Integer> inputs= new ArrayList<>();
+        for(int i=0;i<nSize;i++){
+            inputs.add(input.nextInt());
+        }
+        int paidAmount=input.nextInt();
+
+        bonAppetit(inputs,k,paidAmount);
+
 
     }
 }
