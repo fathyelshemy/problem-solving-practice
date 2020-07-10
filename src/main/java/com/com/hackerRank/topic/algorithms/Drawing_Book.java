@@ -1,15 +1,10 @@
-package com;
-// this is default class for solve any new problem
-// this is default class for solve any new problem
+package com.com.hackerRank.topic.algorithms;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
-public class Solution {
+public class Drawing_Book {
+
+
     static int pageCount(int n, int p) {
 
         int frontDistance=((p)/2);
