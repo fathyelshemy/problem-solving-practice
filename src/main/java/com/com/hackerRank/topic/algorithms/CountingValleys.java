@@ -1,16 +1,14 @@
-package com;
-// this is default class for solve any new problem
-// this is default class for solve any new problem
+package com.com.hackerRank.topic.algorithms;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
-public class Solution {
+public class CountingValleys {
+    /**
+     * @Auther Fathy Elshemy
+     * @Link n https://www.hackerrank.com/challenges/counting-valleys/problem
+     *
+     */
+
     // Complete the countingValleys function below.
     static int countingValleys(int n, String s) {
         int v = 0;     // # of valleys
