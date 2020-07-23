@@ -1,16 +1,13 @@
-package com;
-// this is default class for solve any new problem
-// this is default class for solve any new problem
+package com.com.hackerRank.topic.algorithms;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
-public class Solution {
+/**
+ * @Link: https://www.hackerrank.com/challenges/electronics-shop/problem
+ * @Auther: fathy elshemy
+ */
+public class ElectronicsShop {
+
     static int getMoneySpent(int[] keyboards, int[] drives, int b) {
         int optimalMax=-1;
 
