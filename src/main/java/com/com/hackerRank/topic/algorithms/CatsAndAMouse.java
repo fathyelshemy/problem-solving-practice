@@ -1,14 +1,15 @@
-package com;
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+package com.com.hackerRank.topic.algorithms;
 
-public class Solution {
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
 
+/**
+ * @Link: https://www.hackerrank.com/challenges/cats-and-a-mouse/problem
+ * @Auther: fathy elshemy
+ */
+public class CatsAndAMouse {
     // Complete the catAndMouse function below.
     static String catAndMouse(int x, int y, int z) {
 
