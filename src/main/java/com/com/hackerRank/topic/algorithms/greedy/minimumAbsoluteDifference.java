@@ -1,4 +1,4 @@
-package com.com.hackerRank.topic.algorithms;
+package com.com.hackerRank.topic.algorithms.greedy;
 
 import java.io.*;
 import java.util.Collections;
