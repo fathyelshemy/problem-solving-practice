@@ -1,13 +1,20 @@
-package com;
-import java.io.*;
-import java.util.*;
+package com.hackerRank.topic.algorithms.greedy;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
 
-public class Solution {
+public class JimAndTheOrders {
+
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 //        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
@@ -36,8 +43,6 @@ public class Solution {
 
     static class Result {
 
-
-
         /*
          * Complete the 'jimOrders' function below.
          *
@@ -60,4 +65,5 @@ public class Solution {
 
         }
     }
+
 }
