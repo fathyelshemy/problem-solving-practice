@@ -4,12 +4,20 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4f1b249-5c0a-45a7-9f1d-70a8754894a7" name="Default Changelist" comment="solve Marcs_Cakewalk problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/marcs-cakewalk/problem">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/com/hackerRank/topic/algorithms/greedy/MaxMin.java" afterDir="false" />
+    <list default="true" id="d4f1b249-5c0a-45a7-9f1d-70a8754894a7" name="Default Changelist" comment="remove extra 'com' keyword and rename 'hackerRank' to 'hackerrank' from package name com.com.hackarrank.topic.algorithms">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/com/hackerRank/topic/algorithms/minimumAbsoluteDifference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/com/hackerRank/topic/algorithms/greedy/minimumAbsoluteDifference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/com/hackerRank/topic/algorithms/Between_two_sets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hackerRank/topic/algorithms/Between_two_sets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/com/hackerRank/topic/algorithms/Bon_Appétit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hackerRank/topic/algorithms/Bon_Appétit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/com/hackerRank/topic/algorithms/CatsAndAMouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hackerRank/topic/algorithms/CatsAndAMouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/com/hackerRank/topic/algorithms/CountingValleys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hackerRank/topic/algorithms/CountingValleys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/com/hackerRank/topic/algorithms/DayOfProgrammer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hackerRank/topic/algorithms/DayOfProgrammer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/com/hackerRank/topic/algorithms/Drawing_Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hackerRank/topic/algorithms/Drawing_Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/com/hackerRank/topic/algorithms/ElectronicsShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hackerRank/topic/algorithms/ElectronicsShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/com/hackerRank/topic/algorithms/Sock_Merchant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hackerRank/topic/algorithms/Sock_Merchant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/com/hackerRank/topic/algorithms/greedy/Marcs_Cakewalk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hackerRank/topic/algorithms/greedy/Marcs_Cakewalk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/com/hackerRank/topic/algorithms/greedy/MaxMin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hackerRank/topic/algorithms/greedy/MaxMin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/com/hackerRank/topic/algorithms/greedy/minimumAbsoluteDifference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hackerRank/topic/algorithms/greedy/minimumAbsoluteDifference.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +54,13 @@
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -56,6 +71,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -129,7 +145,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -149,6 +165,7 @@
       <workItem from="1594497211678" duration="988000" />
       <workItem from="1594844435182" duration="1011000" />
       <workItem from="1595494310869" duration="6504000" />
+      <workItem from="1620555850132" duration="495000" />
     </task>
     <task id="LOCAL-00001" summary="solve hacckerRank problem with name Between two sets &#10;https://www.hackerrank.com/challenges/between-two-sets/problem">
       <created>1593686355840</created>
@@ -240,12 +257,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="solve hacckerRank problem with name Between two sets &#10;https://www.hackerrank.com/challenges/between-two-sets/problem" />
@@ -258,7 +276,16 @@
     <MESSAGE value="solve Drawing_Book problem in hackerRank &#10;https://www.hackerrank.com/challenges/counting-valleys/problem" />
     <MESSAGE value="solve Minimum_Absolute_Difference_in_an_Array problem in hackerRank &#10;https://www.hackerrank.com/challenges/minimum-absolute-difference-in-an-array/problem" />
     <MESSAGE value="solve Marcs_Cakewalk problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/marcs-cakewalk/problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="solve Marcs_Cakewalk problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/marcs-cakewalk/problem" />
+    <MESSAGE value="remove extra 'com' keyword from package name com.com.hackarRank.topic.algorithms" />
+    <MESSAGE value="remove extra 'com' keyword and rename 'hackerRank' to 'hackerrank' from package name com.com.hackarRank.topic.algorithms" />
+    <MESSAGE value="remove extra 'com' keyword and rename 'hackerRank' to 'hackerrank' from package name com.com.hackarrank.topic.algorithms" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove extra 'com' keyword and rename 'hackerRank' to 'hackerrank' from package name com.com.hackarrank.topic.algorithms" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="283" y="1" key="CommitChangelistDialog2" timestamp="1620556363047">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="283" y="1" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1620556363047" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

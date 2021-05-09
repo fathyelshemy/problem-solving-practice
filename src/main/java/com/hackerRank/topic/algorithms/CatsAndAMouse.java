@@ -1,4 +1,4 @@
-package com.com.hackerRank.topic.algorithms;
+package com.hackerRank.topic.algorithms;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
