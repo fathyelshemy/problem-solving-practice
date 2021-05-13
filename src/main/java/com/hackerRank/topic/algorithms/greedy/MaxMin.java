@@ -1,4 +1,4 @@
-package com.com.hackerRank.topic.algorithms.greedy;
+package com.hackerRank.topic.algorithms.greedy;
 
 import com.Solution;
 
