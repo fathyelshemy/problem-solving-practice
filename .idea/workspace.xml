@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4f1b249-5c0a-45a7-9f1d-70a8754894a7" name="Default Changelist" comment="solve Marcs_Cakewalk problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/marcs-cakewalk/problem">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/com/hackerRank/topic/algorithms/greedy/MaxMin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/com/hackerRank/topic/algorithms/greedy/PermutingTwoArrays.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/com/hackerRank/topic/algorithms/minimumAbsoluteDifference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/com/hackerRank/topic/algorithms/greedy/minimumAbsoluteDifference.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,19 +263,26 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/Solution.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="5" />
+          <line>51</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/Solution.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/Solution.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/Solution.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="i&gt;=1&amp;&amp; (charsToInt.get(i-1)==1)&amp;&amp; (charsToInt.get(i)==0) &amp;&amp; sum ==0" language="JAVA" />
-        <watch expression="i&gt;=1&amp;" />
-        <watch expression="charsToInt.get(i-1)==1" />
-        <watch expression="sum ==0" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="masterDetails">
     <states>

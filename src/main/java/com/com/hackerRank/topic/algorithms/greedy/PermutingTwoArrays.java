@@ -1,12 +1,17 @@
-package com;
-import java.io.*;
-import java.util.*;
+package com.com.hackerRank.topic.algorithms.greedy;
+
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Collections;
+import java.util.List;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
 
-public class Solution {
+public class PermutingTwoArrays {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
@@ -35,7 +40,6 @@ public class Solution {
         });
         bufferedReader.close();
     }
-
     static class Result {
         /*
          * Complete the 'twoArrays' function below.
@@ -62,4 +66,5 @@ public class Solution {
             return result;
         }
     }
+
 }
