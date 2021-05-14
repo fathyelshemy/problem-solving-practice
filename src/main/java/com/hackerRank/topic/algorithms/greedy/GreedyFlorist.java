@@ -1,13 +1,17 @@
-package com;
-import java.io.*;
-import java.util.*;
+package com.hackerRank.topic.algorithms.greedy;
+
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class Solution {
+public class GreedyFlorist {
     // Complete the getMinimumCost function below.
     static int getMinimumCost(int k, int[] c) {
 
-        List<Integer>c1=Arrays.stream(c)
+        List<Integer> c1= Arrays.stream(c)
                 .boxed()
                 .sorted(Collections.reverseOrder())
                 .collect(Collectors.toList());
@@ -19,7 +23,7 @@ public class Solution {
                 c1.set(i, (c1.get(i) * max));
             }
         }
-    return c1.stream().mapToInt(i->i).sum();
+        return c1.stream().mapToInt(i->i).sum();
     }
 
     private static final Scanner scanner = new Scanner(System.in);
@@ -46,5 +50,6 @@ public class Solution {
         System.out.println(minimumCost);
         scanner.close();
     }
+
 
 }
