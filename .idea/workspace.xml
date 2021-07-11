@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4f1b249-5c0a-45a7-9f1d-70a8754894a7" name="Default Changelist" comment="solve Maximum Perimeter Triangle problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/maximum-perimeter-triangle/problem">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hackerRank/topic/algorithms/greedy/MaximumPerimeterTriangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hackerRank/topic/algorithms/greedy/GridChallenge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Solution.java" afterDir="false" />
     </list>
@@ -171,7 +171,7 @@
       <workItem from="1594497211678" duration="988000" />
       <workItem from="1594844435182" duration="1011000" />
       <workItem from="1595494310869" duration="6504000" />
-      <workItem from="1626009749468" duration="3373000" />
+      <workItem from="1626009749468" duration="14183000" />
     </task>
     <task id="LOCAL-00001" summary="solve hacckerRank problem with name Between two sets &#10;https://www.hackerrank.com/challenges/between-two-sets/problem">
       <created>1593686355840</created>
@@ -250,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626026967097</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="solve Maximum Perimeter Triangle problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/maximum-perimeter-triangle/problem">
+      <created>1626027287307</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1626027287307</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -296,23 +303,36 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/Solution.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/Solution.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/Solution.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/Solution.java</url>
-          <line>36</line>
+          <line>39</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/Solution.java</url>
+          <line>33</line>
+          <properties>
+            <option name="lambda-ordinal" value="1" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/Solution.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/Solution.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/Solution.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/Solution.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

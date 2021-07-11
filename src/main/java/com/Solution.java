@@ -1,12 +1,7 @@
 package com;
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
+import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
@@ -14,26 +9,66 @@ import static java.util.stream.Collectors.toList;
 class Result {
 
     /*
-     * Complete the 'maximumPerimeterTriangle' function below.
+     * Complete the 'gridChallenge' function below.
      *
-     * The function is expected to return an INTEGER_ARRAY.
-     * The function accepts INTEGER_ARRAY sticks as parameter.
+     * The function is expected to return a STRING.
+     * The function accepts STRING_ARRAY grid as parameter.
      */
+    private static List<String> buildSortedGridMatrix(List<String> grid){
+        List<String> sortedGrid=new ArrayList<>();
+        grid.forEach(gridElement->{
+            List<Character> chars=gridElement.chars().mapToObj(c->(char)c).sorted().collect(toList());
+            StringBuilder tempBuilder= new StringBuilder();
+            chars.forEach(c-> tempBuilder.append(c));
+            sortedGrid.add(tempBuilder.toString());
+        });
+        return sortedGrid;
+    }
 
-    public static List<Integer> maximumPerimeterTriangle(List<Integer> sticks) {
+        public static String gridChallenge(List<String> grid) {
         // Write your code here
-        List<Integer> result=new ArrayList<>();
-        Collections.sort(sticks,Collections.reverseOrder());
-        for(int i=0;i<sticks.size()-2 ;i++){
-            if(sticks.get(i)< sticks.get(i+1)+sticks.get(i+2)){
-                result.addAll(Arrays.asList(sticks.get(i+2),sticks.get(i+1),sticks.get(i)));
-                break;
+        List<String> sortedGrid=buildSortedGridMatrix(grid);
+        List<String> str = RotateMatrixBy90(sortedGrid);
+        AtomicReference<String> result= new AtomicReference<>("YES");
+        str.forEach(element-> {
+            String finalElement=element.chars().mapToObj(c->String.valueOf((char)c)).sorted().collect(joining());
+            if(!finalElement.equals(element)){
+                result.set("NO");
             }
-        }
-        if(result.isEmpty())
-            result.add(-1);
+        });
 
-        return result;
+        return result.get();
+    }
+
+    private static List<String> RotateMatrixBy90( List<String> sortedGrid) {
+        List<List<Character>> gridMatrix = getCharMatrix(sortedGrid);
+        List<String> str= new ArrayList<>();
+        for(int i = 0, j = 0; i< sortedGrid.get(0).length(); i++){
+            List<Character> characters=new ArrayList<>();
+            while(j< sortedGrid.size()){
+                characters.add(gridMatrix.get(j).get(i));
+                j++;
+            }
+            j=0;
+            StringBuilder tempBuilder= new StringBuilder();
+            characters.forEach(c-> tempBuilder.append(c));
+            str.add(tempBuilder.toString());
+        }
+        return str;
+    }
+
+    private static List<List<Character>> getCharMatrix(List<String> sortedGrid) {
+        List<List<Character>> gridMatrix= new ArrayList<>();
+        for(int i = 0; i< sortedGrid.size(); i++){
+
+            gridMatrix.addAll(
+                    Collections.singleton(sortedGrid.get(i)
+                                                .chars()
+                                                .mapToObj(c->(char)c)
+                                                .collect(toList())
+            ));
+        }
+        return gridMatrix;
     }
 
 }
@@ -43,20 +78,29 @@ public class Solution {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        int n = Integer.parseInt(bufferedReader.readLine().trim());
+        int t = Integer.parseInt(bufferedReader.readLine().trim());
 
-        List<Integer> sticks = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-                .map(Integer::parseInt)
-                .collect(toList());
+        IntStream.range(0, t).forEach(tItr -> {
+            try {
+                int n = Integer.parseInt(bufferedReader.readLine().trim());
 
-        List<Integer> result = Result.maximumPerimeterTriangle(sticks);
+                List<String> grid = IntStream.range(0, n).mapToObj(i -> {
+                    try {
+                        return bufferedReader.readLine();
+                    } catch (IOException ex) {
+                        throw new RuntimeException(ex);
+                    }
+                })
+                        .collect(toList());
 
-        bufferedWriter.write(
-                result.stream()
-                        .map(Object::toString)
-                        .collect(joining(" "))
-                        + "\n"
-        );
+                String result = Result.gridChallenge(grid);
+
+                bufferedWriter.write(result);
+                bufferedWriter.newLine();
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
 
         bufferedReader.close();
         bufferedWriter.close();
