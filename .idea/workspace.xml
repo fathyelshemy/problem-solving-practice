@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4f1b249-5c0a-45a7-9f1d-70a8754894a7" name="Default Changelist" comment="solve Maximum Perimeter Triangle problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/maximum-perimeter-triangle/problem">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hackerRank/topic/algorithms/greedy/GridChallenge.java" afterDir="false" />
+    <list default="true" id="d4f1b249-5c0a-45a7-9f1d-70a8754894a7" name="Default Changelist" comment="solve Grid Challenge problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/grid-challenge/problem">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hackerRank/topic/algorithms/greedy/GridChallenge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hackerRank/topic/algorithms/greedy/GridChallenge.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +170,7 @@
       <workItem from="1594497211678" duration="988000" />
       <workItem from="1594844435182" duration="1011000" />
       <workItem from="1595494310869" duration="6504000" />
-      <workItem from="1626009749468" duration="14183000" />
+      <workItem from="1626009749468" duration="14344000" />
     </task>
     <task id="LOCAL-00001" summary="solve hacckerRank problem with name Between two sets &#10;https://www.hackerrank.com/challenges/between-two-sets/problem">
       <created>1593686355840</created>
@@ -257,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626027287307</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="solve Grid Challenge problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/grid-challenge/problem">
+      <created>1626044381816</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1626044381816</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -296,7 +302,8 @@
     <MESSAGE value="solve Minimum_Absolute_Difference_in_an_Array problem in hackerRank &#10;https://www.hackerrank.com/challenges/minimum-absolute-difference-in-an-array/problem" />
     <MESSAGE value="solve Marcs_Cakewalk problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/marcs-cakewalk/problem" />
     <MESSAGE value="solve Maximum Perimeter Triangle problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/maximum-perimeter-triangle/problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="solve Maximum Perimeter Triangle problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/maximum-perimeter-triangle/problem" />
+    <MESSAGE value="solve Grid Challenge problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/grid-challenge/problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="solve Grid Challenge problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/grid-challenge/problem" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

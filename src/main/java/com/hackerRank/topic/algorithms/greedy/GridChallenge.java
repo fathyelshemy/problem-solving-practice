@@ -12,7 +12,7 @@ import static java.util.stream.Collectors.toList;
 
 public class GridChallenge {
     static class Result {
-
+        private Result() {}
         /*
          * Complete the 'gridChallenge' function below.
          *
@@ -22,9 +22,9 @@ public class GridChallenge {
         private static List<String> buildSortedGridMatrix(List<String> grid){
             List<String> sortedGrid=new ArrayList<>();
             grid.forEach(gridElement->{
-                List<Character> chars=gridElement.chars().mapToObj(c->(char)c).sorted().collect(toList());
+                List<Character> chars=gridElement.chars().mapToObj(char.class::cast).sorted().collect(toList());
                 StringBuilder tempBuilder= new StringBuilder();
-                chars.forEach(c-> tempBuilder.append(c));
+                chars.forEach(tempBuilder::append);
                 sortedGrid.add(tempBuilder.toString());
             });
             return sortedGrid;
@@ -33,7 +33,7 @@ public class GridChallenge {
         public static String gridChallenge(List<String> grid) {
             // Write your code here
             List<String> sortedGrid=buildSortedGridMatrix(grid);
-            List<String> str = RotateMatrixBy90(sortedGrid);
+            List<String> str = rotateMatrixBy90(sortedGrid);
             AtomicReference<String> result= new AtomicReference<>("YES");
             str.forEach(element-> {
                 String finalElement=element.chars().mapToObj(c->String.valueOf((char)c)).sorted().collect(joining());
@@ -45,7 +45,7 @@ public class GridChallenge {
             return result.get();
         }
 
-        private static List<String> RotateMatrixBy90( List<String> sortedGrid) {
+        private static List<String> rotateMatrixBy90(List<String> sortedGrid) {
             List<List<Character>> gridMatrix = getCharMatrix(sortedGrid);
             List<String> str= new ArrayList<>();
             for(int i = 0, j = 0; i< sortedGrid.get(0).length(); i++){
@@ -56,7 +56,7 @@ public class GridChallenge {
                 }
                 j=0;
                 StringBuilder tempBuilder= new StringBuilder();
-                characters.forEach(c-> tempBuilder.append(c));
+                characters.forEach(tempBuilder::append);
                 str.add(tempBuilder.toString());
             }
             return str;
@@ -69,7 +69,7 @@ public class GridChallenge {
                 gridMatrix.addAll(
                         Collections.singleton(sortedGrid.get(i)
                                 .chars()
-                                .mapToObj(c->(char)c)
+                                .mapToObj(char.class::cast)
                                 .collect(toList())
                         ));
             }
