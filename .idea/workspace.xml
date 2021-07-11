@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4f1b249-5c0a-45a7-9f1d-70a8754894a7" name="Default Changelist" comment="solve Marcs_Cakewalk problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/marcs-cakewalk/problem">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/com/hackerRank/topic/algorithms/greedy/PermutingTwoArrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hackerRank/topic/algorithms/greedy/MaximumPerimeterTriangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Solution.java" afterDir="false" />
     </list>
@@ -54,6 +54,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -120,6 +122,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Solution (1)" />
@@ -147,6 +171,7 @@
       <workItem from="1594497211678" duration="988000" />
       <workItem from="1594844435182" duration="1011000" />
       <workItem from="1595494310869" duration="6504000" />
+      <workItem from="1626009749468" duration="3031000" />
     </task>
     <task id="LOCAL-00001" summary="solve hacckerRank problem with name Between two sets &#10;https://www.hackerrank.com/challenges/between-two-sets/problem">
       <created>1593686355840</created>
@@ -231,7 +256,7 @@
     </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -263,22 +288,22 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/Solution.java</url>
-          <line>51</line>
+          <line>54</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/Solution.java</url>
-          <line>52</line>
+          <line>55</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/Solution.java</url>
-          <line>53</line>
+          <line>59</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/Solution.java</url>
-          <line>28</line>
+          <line>36</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
