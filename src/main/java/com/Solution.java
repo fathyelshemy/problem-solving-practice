@@ -1,74 +1,37 @@
 package com;
 import java.io.*;
 import java.util.*;
-import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.*;
-import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
 class Result {
 
     /*
-     * Complete the 'gridChallenge' function below.
+     * Complete the 'beautifulPairs' function below.
      *
-     * The function is expected to return a STRING.
-     * The function accepts STRING_ARRAY grid as parameter.
+     * The function is expected to return an INTEGER.
+     * The function accepts following parameters:
+     *  1. INTEGER_ARRAY A
+     *  2. INTEGER_ARRAY B
      */
-    private static List<String> buildSortedGridMatrix(List<String> grid){
-        List<String> sortedGrid=new ArrayList<>();
-        grid.forEach(gridElement->{
-            List<Character> chars=gridElement.chars().mapToObj(c->(char)c).sorted().collect(toList());
-            StringBuilder tempBuilder= new StringBuilder();
-            chars.forEach(c-> tempBuilder.append(c));
-            sortedGrid.add(tempBuilder.toString());
-        });
-        return sortedGrid;
-    }
 
-        public static String gridChallenge(List<String> grid) {
+    public static int beautifulPairs(List<Integer> A, List<Integer> B) {
         // Write your code here
-        List<String> sortedGrid=buildSortedGridMatrix(grid);
-        List<String> str = RotateMatrixBy90(sortedGrid);
-        AtomicReference<String> result= new AtomicReference<>("YES");
-        str.forEach(element-> {
-            String finalElement=element.chars().mapToObj(c->String.valueOf((char)c)).sorted().collect(joining());
-            if(!finalElement.equals(element)){
-                result.set("NO");
-            }
-        });
-
-        return result.get();
-    }
-
-    private static List<String> RotateMatrixBy90( List<String> sortedGrid) {
-        List<List<Character>> gridMatrix = getCharMatrix(sortedGrid);
-        List<String> str= new ArrayList<>();
-        for(int i = 0, j = 0; i< sortedGrid.get(0).length(); i++){
-            List<Character> characters=new ArrayList<>();
-            while(j< sortedGrid.size()){
-                characters.add(gridMatrix.get(j).get(i));
-                j++;
-            }
-            j=0;
-            StringBuilder tempBuilder= new StringBuilder();
-            characters.forEach(c-> tempBuilder.append(c));
-            str.add(tempBuilder.toString());
+        Collections.sort(B);
+        Collections.sort(A);
+        List<Integer>pairWise=new ArrayList<>();
+        for(int i=0;i<A.size();i++){
+            int currentElement=A.get(i);
+            B.stream()
+                    .filter(b-> b==currentElement)
+                    .findFirst()
+                    .ifPresent(b->{
+                        pairWise.add(b);
+                        B.remove(b);
+                    });
         }
-        return str;
-    }
 
-    private static List<List<Character>> getCharMatrix(List<String> sortedGrid) {
-        List<List<Character>> gridMatrix= new ArrayList<>();
-        for(int i = 0; i< sortedGrid.size(); i++){
-
-            gridMatrix.addAll(
-                    Collections.singleton(sortedGrid.get(i)
-                                                .chars()
-                                                .mapToObj(c->(char)c)
-                                                .collect(toList())
-            ));
-        }
-        return gridMatrix;
+        return (pairWise.size()==A.size()  ) ? pairWise.size()-1:pairWise.size()+1;
     }
 
 }
@@ -78,29 +41,20 @@ public class Solution {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        int t = Integer.parseInt(bufferedReader.readLine().trim());
+        int n = Integer.parseInt(bufferedReader.readLine().trim());
 
-        IntStream.range(0, t).forEach(tItr -> {
-            try {
-                int n = Integer.parseInt(bufferedReader.readLine().trim());
+        List<Integer> A = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+                .map(Integer::parseInt)
+                .collect(toList());
 
-                List<String> grid = IntStream.range(0, n).mapToObj(i -> {
-                    try {
-                        return bufferedReader.readLine();
-                    } catch (IOException ex) {
-                        throw new RuntimeException(ex);
-                    }
-                })
-                        .collect(toList());
+        List<Integer> B = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+                .map(Integer::parseInt)
+                .collect(toList());
 
-                String result = Result.gridChallenge(grid);
+        int result = Result.beautifulPairs(A, B);
 
-                bufferedWriter.write(result);
-                bufferedWriter.newLine();
-            } catch (IOException ex) {
-                throw new RuntimeException(ex);
-            }
-        });
+        bufferedWriter.write(String.valueOf(result));
+        bufferedWriter.newLine();
 
         bufferedReader.close();
         bufferedWriter.close();

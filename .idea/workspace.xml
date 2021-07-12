@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4f1b249-5c0a-45a7-9f1d-70a8754894a7" name="Default Changelist" comment="solve Grid Challenge problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/grid-challenge/problem">
+    <list default="true" id="d4f1b249-5c0a-45a7-9f1d-70a8754894a7" name="Default Changelist" comment="solve Beautiful Pairs problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/beautiful-pairs/problem">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hackerRank/topic/algorithms/greedy/BeautifulPairs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hackerRank/topic/algorithms/greedy/GridChallenge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hackerRank/topic/algorithms/greedy/GridChallenge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,13 +123,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -170,7 +174,8 @@
       <workItem from="1594497211678" duration="988000" />
       <workItem from="1594844435182" duration="1011000" />
       <workItem from="1595494310869" duration="6504000" />
-      <workItem from="1626009749468" duration="14344000" />
+      <workItem from="1626009749468" duration="14617000" />
+      <workItem from="1626106653354" duration="2692000" />
     </task>
     <task id="LOCAL-00001" summary="solve hacckerRank problem with name Between two sets &#10;https://www.hackerrank.com/challenges/between-two-sets/problem">
       <created>1593686355840</created>
@@ -263,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626044381816</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="refactor code for Grid Challenge problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/grid-challenge/problem">
+      <created>1626044585703</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1626044585703</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -303,43 +315,32 @@
     <MESSAGE value="solve Marcs_Cakewalk problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/marcs-cakewalk/problem" />
     <MESSAGE value="solve Maximum Perimeter Triangle problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/maximum-perimeter-triangle/problem" />
     <MESSAGE value="solve Grid Challenge problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/grid-challenge/problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="solve Grid Challenge problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/grid-challenge/problem" />
+    <MESSAGE value="refactor code for Grid Challenge problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/grid-challenge/problem" />
+    <MESSAGE value="solve Beautiful Pairs problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/beautiful-pairs/problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="solve Beautiful Pairs problem in hackerRank (Greedy)&#10;https://www.hackerrank.com/challenges/beautiful-pairs/problem" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/Solution.java</url>
-          <line>39</line>
+          <line>17</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/Solution.java</url>
-          <line>33</line>
-          <properties>
-            <option name="lambda-ordinal" value="1" />
-          </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/Solution.java</url>
-          <line>34</line>
+          <line>16</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/Solution.java</url>
-          <line>43</line>
+          <line>34</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/Solution.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/Solution.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="14" />
+          <line>33</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
